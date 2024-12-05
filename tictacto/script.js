@@ -30,6 +30,8 @@ boxes.forEach((box)=>{
       turn0=true;
     }
     box.disabled=true;
+    checkWinner();
   })
 
 })
+check
