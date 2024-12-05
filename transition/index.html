@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body{
+            background-color: gray;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: 2px solid rgb(165, 12, 12);
+
+            transition-property: width;
+            transition-duration: 2s;
+            transition-delay:  1s;
+            transition-timing-function: ease-in;
+
+        }
+        /* hover effect */
+        .box:hover{
+            width: 850px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>

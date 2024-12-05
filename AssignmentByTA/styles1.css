@@ -1,0 +1,48 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:gray;
+}
+
+/* Blog post container styling */
+.blog-post {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid gold;
+    background-color: rgb(222, 135, 197);
+    box-shadow: 10px 10px 10px rgb(57, 27, 58);
+}
+
+/* Title styling */
+.blog-post h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+/* Image styling */
+.blog-post img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 20px;
+    transition: filter 0.3s ease;
+}
+
+/* Image hover effect */
+.blog-post img:hover {
+    filter: grayscale(50%);
+}
+
+/* Paragraph styling */
+.blog-post p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

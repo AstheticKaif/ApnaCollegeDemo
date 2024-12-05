@@ -1,0 +1,55 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Call-to-action banner styling */
+.cta-banner {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    margin: 20px;
+    background-color: #007bff; /* Banner background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center text and button */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headline styling */
+.cta-banner h2 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+}
+
+/* Subheadline styling */
+.cta-banner p {
+    font-size: 1.2em;
+    margin: 0 0 30px;
+}
+
+/* Button styling */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #28a745; /* Button background color */
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color .3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+    background-color: #218838; /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly larger button on hover */
+}
+ 

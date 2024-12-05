@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .box{
+        height: 400px;
+        width: 400px;
+        background-color: slategray;
+        border-radius: 20px;
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;                      
+
+      }
+    @media (min-width:300px) and ( max-width:500px){   /* 300 to 500 px main box green main hoga  and 330 se kam and 500 ke jada par box grey main rhega   */
+        /* 0-500px main green show hoga usse jada par grey hoga */
+        /* for min-width ,500 or more green hoga usse kam par grey show hoga */
+        .box{
+            background-color: green;
+        }
+    }
+
+    </style>
+</head>
+<body>
+   <div class="box">
+    Hello Jee
+   </div> 
+</body>
+</html>

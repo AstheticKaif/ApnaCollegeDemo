@@ -1,0 +1,43 @@
+/* General body styling for context */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:gray;
+}
+
+/* Styling for the feature box */
+.feature-box {
+    padding: 20px;
+    border: 2px solid #007BFF; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 10px 10px 8px rgba(234, 9, 9, 0.1); /* Subtle shadow */
+    background-color: #c99cbd;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Styling for the icon */
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    background-color: aqua;
+}
+
+/* Styling for the headline */
+.feature-title {
+    color: #007BFF; /* Headline color */
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+
+/* Styling for the description */
+.feature-description {
+    color: #333333; /* Description text color */
+    font-size: 1em;
+    margin: 0;
+}

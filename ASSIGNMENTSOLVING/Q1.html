@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile card</title>
+  </head>
+  <style>
+    
+   html,  body{
+        height: 100svh;
+        width: 100svw;
+        display: grid;
+        place-content:center ;
+        background-color: gray;
+
+    }
+    .container {
+      background-image: url(./https___dev-to-uploads.s3.amazonaws.com_uploads_articles_4a6t7pmm323uaz9rv1rf.avif);
+      background-size: cover;
+      height: 400px;
+      width: 800px;
+      display: grid;
+     place-items:center ;
+      box-shadow: 10px 10px 10px gray;
+      margin: 20px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 20px;
+    }
+    div img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin: 20px;
+      object-fit: cover;
+    }
+    #name {
+      font-size: 24px;
+      color: rgb(176, 9, 173);
+     
+      margin-top: 20px;
+    }
+    .container:hover {
+      transform: scale(1.05);
+
+      box-shadow: 0 0 20px rgba(165, 42, 128, 0.5);
+    }
+    .container img:hover {
+      transform: scale(1.05);
+
+      box-shadow: 0 0 20px rgba(165, 42, 128, 0.5);
+    }
+    #name {
+      background-color: aqua;
+      border-radius: 8px;
+    }
+    #name:hover {
+      transform: scale(1.05);
+
+      box-shadow: 0 0 20px rgba(42, 140, 165, 0.5);
+    }
+    h3 span {
+      background-color: beige;
+      border-radius: 8px;
+      color: blueviolet;
+    }
+    h3 span:hover{
+        transform: scale(1.05);
+
+         box-shadow: 0 0 20px rgba(147, 42, 165, 0.5);
+
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div>
+        <img src="./Photo on 05.08.2024 at 9.57 PM.jpg" alt="" height="150px" />
+        <div id="name">
+          <h4 id="name">Name: <span>MD Kaif Molla </span></h4>
+        </div>
+        <h3><span>SST Student</span></h3>
+      </div>
+    </div>
+  </body>
+</html>

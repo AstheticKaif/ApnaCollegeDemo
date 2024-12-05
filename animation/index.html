@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: grey;
+            border: 5px solid black;
+            position: relative;
+        }
+
+        .box {
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            border: 2px solid rgb(168, 179, 10);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation-name: rightMovement;
+            /* animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function:cubic-bezier(1,-0.4,1,2);
+            animation-direction: alternate;
+            -o-animation-fill-mode: backwards; */
+            /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+           animation: 3s ease-in 1s 2 reverse both paused slidein;
+
+        }
+
+        @keyframes rightMovement {
+            from {
+                left: 0;
+            }
+            to {
+                left: calc(100% - 350px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
