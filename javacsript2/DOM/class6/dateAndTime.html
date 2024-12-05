@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a new Date object with the current date and time
+        let myDate = new Date();
+        // Log the date and time in the default string format
+        console.log(myDate.toString());
+        // Log the date and time in the local format (e.g., for your location)
+        console.log(myDate.toLocaleString());
+        // Log just the date (without time)
+        console.log(myDate.toDateString());
+        // Log the type of the 'myDate' object (which is 'object' in JavaScript)
+        console.log(typeof myDate);
+
+        // Create a Date object for a specific date (January 23, 2023, at 5:03 AM)
+        // Note: Months are 0-indexed (January is 0)
+        let myCreatedDate = new Date(2023, 0, 23, 5, 3);
+        // Create a Date object using the 'YYYY-MM-DD' format
+        let myCreatedDate1 = new Date("2023-01-12");
+        // Create a Date object using the 'MM-DD-YYYY' format
+        let myCreatedDate2 = new Date("01-17-2024");
+        
+        // Log the created date in a readable format
+        console.log(myCreatedDate.toDateString());
+        // Log the created date in a localized string format
+        console.log(myCreatedDate.toLocaleString());
+        // Log the created date1 in a readable format
+        console.log(myCreatedDate1.toDateString());
+
+        // Get the current timestamp (milliseconds since January 1, 1970)
+        let myTimeStamp = Date.now();
+        console.log(myTimeStamp);  // Timestamp in milliseconds
+        // Log the time (in milliseconds) for the specific date object 'myCreatedDate'
+        console.log(myCreatedDate.getTime());
+        // Get the current timestamp in seconds (by dividing by 1000)
+        console.log(Math.floor(Date.now() / 1000));
+
+        // Create a new Date object for the current date and time
+        let newDate = new Date();
+        // Log the current month (0-indexed, so we add 1 to display the correct month number)
+        console.log(newDate.getMonth() + 1);
+        // Log the current day of the week (0 = Sunday, 1 = Monday, etc.)
+        console.log(newDate.getDay());
+
+        // Use the toLocaleString method to display the current weekday in a long format (e.g., "Monday")
+        newDate.toLocaleString('default', {
+            weekday: "long",  // The 'long' option gives the full name of the day (e.g., "Monday")
+        })
+    </script>
+</body>
+</html>

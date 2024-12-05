@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Optional CSS for better alignment */
+      #doubleHolder {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="doubleHolder">
+      <button class="double">Double</button>
+    </div>
+
+    <script>
+      // Function to handle the creation and destruction of buttons
+      function handleButtonClick(event) {
+        // Remove the button that was clicked
+        event.target.remove();
+
+        // Create two new buttons
+        const newButton1 = document.createElement("button");
+        const newButton2 = document.createElement("button");
+        newButton1.classList.add("double");
+        newButton2.classList.add("double");
+
+        // Set button text
+        newButton1.innerHTML = "Double";
+        newButton2.innerHTML = "Double";
+
+        // Append the new buttons to the same container
+        const doubleHolder = document.querySelector("#doubleHolder");
+        doubleHolder.appendChild(newButton1);
+        doubleHolder.appendChild(newButton2);
+      }
+
+      // Add event listener to the initial button
+      document.querySelector("#doubleHolder").addEventListener("click", (e) => {
+        if (e.target && e.target.classList.contains("double")) {
+          handleButtonClick(e);
+        }
+      });
+    </script>
+  </body>
+</html>
+``

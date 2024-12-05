@@ -8,8 +8,11 @@
 </head>
 <style>
     /* class with children combinator */
-     .c1>p{
+     .c1>span>p{
        color: blue;
+     }
+     .c1  span >:nth-child(2){
+        color: rgb(249, 24, 241);
      }
 
 
@@ -22,6 +25,9 @@
     <div class="c1">
         <p>
             I'm the direct son
+        </p>
+        <p>
+            this ks oddj
         </p>
     </div>
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF - 8" />
+    <meta
+      name="viewport"
+      content="width = device - width, initial - scale = 1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-1">Say Hello</button>
+
+    <script>
+      // Show Hello on the click of the Button
+      // QuerySelector
+      let btn = document.querySelector("button");
+      console.log(btn);
+      btn.addEventListener("dblclick", () => {
+        const newDiv = document.createElement("div");
+        newDiv.innerText = "hello";
+        console.log(newDiv);
+        const bodyElem = document.querySelector("body");
+
+        bodyElem.appendChild(newDiv);
+      });
+
+    // btn.click=()=>{
+    //     const newDiv = document.createElement("div");
+    //     newDiv.innerText = "hello";
+    //     console.log(newDiv);
+    //     const bodyElem = document.querySelector("body");
+
+    //     bodyElem.appendChild(newDiv);
+        
+    // }
+    </script>
+  </body>
+</html>

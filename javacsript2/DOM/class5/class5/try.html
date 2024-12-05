@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Event Example</title>
+</head>
+<body>
+    <form>
+        <label>
+            <input type="radio" name="option" value="Option 1"> Option 1
+        </label>
+        <label>
+            <input type="radio" name="option" value="Option 2"> Option 2
+        </label>
+        <label>
+            <input type="radio" name="option" value="Option 3"> Option 3
+        </label>
+    </form>
+
+    <p id="output">Selected option: None</p>
+
+    <script>
+        // Select all radio buttons
+        const radios = document.querySelectorAll('input[name="option"]');
+        const output = document.getElementById('output');
+
+        // Add event listener to each radio button
+        radios.forEach(radio => {
+            radio.addEventListener('change', (event) => {
+                output.textContent = `Selected option: ${event.target.value}`;
+            });
+        });
+    </script>
+</body>
+</html>

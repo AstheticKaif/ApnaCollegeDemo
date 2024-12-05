@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("let's start");
+// Using localStorage to store and manipulate data
+localStorage.setItem('name', 'Bob');   // Sets a key 'name' with value 'Bob' in localStorage
+localStorage.removeItem('name');       // Removes the item with key 'name' from localStorage
+
+// Using sessionStorage to store data temporarily
+sessionStorage.setItem('name', 'John'); // Sets a key 'name' with value 'John' in sessionStorage
+sessionStorage.setItem('name', 'Bob');  // Updates the key 'name' in sessionStorage to 'Bob'
+
+// Setting cookies in the browser
+document.cookie = 'name=Kyle; expires=' + new Date(9999, 0, 1).toUTCString(); 
+// Sets a cookie with key 'name' and value 'Kyle' that expires on January 1, 9999
+
+document.cookie = 'lastName=Smith; expires=' + new Date(9999, 0, 1).toUTCString(); 
+// Sets a cookie with key 'lastName' and value 'Smith' that also expires on January 1, 9999
+
+// Output all current cookies in the browser
+console.log(document.cookie); 
+// Logs all cookies for the current document in the format "name=value; anotherName=anotherValue"
+
+
+//Key Points:
+
+	/***
+    1.	localStorage: Data is stored permanently until explicitly removed using removeItem.
+	2.	sessionStorage: Data is stored temporarily and is cleared when the page session ends (when the tab or window is closed).
+	3.	Cookies: document.cookie is used to manage cookies in the browser. The expires attribute sets the expiration date for the cookie.
+    ***/
+    </script>
+</body>
+</html> 
